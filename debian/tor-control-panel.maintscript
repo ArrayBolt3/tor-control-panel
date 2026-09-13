@@ -3,3 +3,4 @@
 
 rm_conffile /etc/sudoers.d/restart-tor-gui
 rm_conffile /etc/sudoers.d/tor-control-panel
+rm_conffile /etc/privleap/conf.d/tor-control-panel.conf
