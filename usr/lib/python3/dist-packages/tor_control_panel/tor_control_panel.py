@@ -430,7 +430,6 @@ class TorControlPanel(QDialog):
             with Controller.from_socket_file('/run/tor/control') as controller:
                 controller.authenticate()
                 controller.signal(Signal.NEWNYM)
-                self.restart_tor()
 
         except stem.UnsatisfiableRequest:
             print('signal NEWNYM  failed to be processed')
